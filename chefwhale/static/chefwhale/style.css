@@ -1,0 +1,209 @@
+/*
+940px
+*/
+
+html {
+    font-family: 'allerregular', sans-serif;
+}
+
+html, body, #container {
+    height: 100%;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'allerbold', sans-serif;
+}
+
+h1 {
+    font-family: 'aller_displayregular', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 4em;
+    padding: 15px;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #79b6ec;
+    /background-color: #DDD;
+}
+
+#container {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -8em;
+}
+
+#header {
+    position: relative;
+    margin: 0;
+    padding-top: 25px;
+    width: 100%;
+    height: 175px;
+    background-color: #cde5f8;
+}
+
+#logo {
+    padding: 0 25px;
+    /border: 1px solid red;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#nav {
+    display: block;
+    width: 275px;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    /border: 1px solid green;
+}
+
+.menu-item {
+	width: 80px;
+	position: relative;
+	display: inline-block;
+	margin: 0;
+}
+
+.menu-item div {
+	height: 120px;
+	/border: 1px solid red;
+}
+
+#nav #home {
+	background: url(images/home.png) no-repeat;
+	background-size: 100%;
+}
+#nav #home:hover {
+	background: url(images/home_hover.png) no-repeat;
+	background-size: 100%;
+}
+#nav #recipes {
+	background: url(images/recipes.png) no-repeat;
+	background-size: 100%;
+}
+#nav #recipes:hover {
+	background: url(images/recipes_hover.png) no-repeat;
+	background-size: 100%;
+}
+#nav #boxes {
+	background: url(images/boxes.png) no-repeat;
+	background-size: 100%;
+}
+#nav #boxes:hover {
+	background: url(images/boxes_hover.png) no-repeat;
+	background-size: 100%;
+}
+
+#border {
+    dislay: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    padding-top: -25px;
+    background-image: url('images/wave.png');
+}
+
+#fish {
+    position: absolute;
+    width: 100%;
+    top: 200px;
+    z-index: -1;
+}
+
+#content {
+    width: 700px;
+    /*height: 700px;*/
+    background-color: #fff;
+    margin: 10px auto 25px auto;
+    padding: 20px;
+    padding-top: 0;
+    /border: 1px solid red;
+}
+
+#push {
+    height: 8em;
+    /width: 100%;
+    /background-color: red;
+}
+
+#footer {
+    clear: both;
+    position: relative;
+    width: 100%;
+    height: 8em;
+}
+
+#footer > img {
+    position: absolute;
+    bottom: 50%;
+    z-index: -1;
+}
+
+#seaweed1 {
+    left: 50px;
+}
+#seaweed2 {
+    right: 50px;
+}
+
+#footer #seafloor {
+    height: 40px;
+    background-image: url('images/seafloor.png');
+    /border: 1px solid green;
+}
+
+#footer #text-area {
+    height: calc(8em - 40px);
+    background-color: #ba9754;
+}
+
+#footer #text-area ul {
+    /border: 1px solid red;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 1em;
+    text-align: center;
+}
+
+#footer #text-area ul li {
+    display: inline;
+}
+
+#footer a {
+    display: inline-block;
+    padding: 10px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 1025px) {
+    #header {
+        height: calc(250px);
+    }
+    #fish {
+        top: 325px;
+    }
+    #logo {
+        max-width: calc(100% - 50px);
+    }
+}
+
+@media screen and (max-width: 775px) {
+    #content {
+        width: calc(100% - 60px);
+    }
+    #fish {
+        visibility: hidden;
+    }
+}

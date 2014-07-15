@@ -1,0 +1,50 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is a test</title>
+        <link rel="stylesheet" type="text/css"  href="{% static 'chefwhale/fonts/fonts.css' %}" />
+        <link rel="stylesheet" type="text/css"  href="{% static 'chefwhale/style.css' %}" />
+    </head>
+    <body>
+        <div id="container">
+        
+            <div id="header">
+                <div id="nav">
+                    <a href="#"><div class="menu-item">
+				        <div id="home"></div>
+			        </div></a>
+			        <a href="#"><div class="menu-item">
+				        <div id="recipes"></div>
+			        </div></a>
+			        <a href="#"><div class="menu-item">
+				        <div id="boxes"></div>
+			        </div></a>
+                </div>
+                <img id="logo" src="{% static 'chefwhale/images/whale_title.png' %}" />
+                <div id="border"></div>
+            </div>
+            <img id="fish" src="{% static 'chefwhale/images/fish.png' %}" />
+            <div id="content">
+                {% block content %}<h1 style>Coming Soon</h1>{% endblock %}
+            </div>
+            <div id="push"></div>
+        </div>
+        
+        <div id="footer">
+            <img src="{% static 'chefwhale/images/seaweed1.png' %}" id="seaweed1" />
+            <img src="{% static 'chefwhale/images/seaweed2.png' %}" id="seaweed2" />
+            <div id="seafloor"></div>
+            <div id="text-area">
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><img src="{% static 'chefwhale/images/starfish.png' %}" /></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><img src="{% static 'chefwhale/images/starfish.png' %}" /></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
