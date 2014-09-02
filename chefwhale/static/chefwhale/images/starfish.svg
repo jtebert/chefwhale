@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="52.448555"
+   height="50"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="starfish.svg"
+   inkscape:export-filename="/home/jtebert/Copy/Projects/Programming/hungry_pterodactyl/starfish.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="-56.265633"
+     inkscape:cy="53.845889"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="878"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-260.93815,-466.4793)">
+    <path
+       sodipodi:type="star"
+       style="color:#000000;fill:#ff8c3b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path3766"
+       sodipodi:sides="5"
+       sodipodi:cx="-200"
+       sodipodi:cy="143.79076"
+       sodipodi:r1="126.81338"
+       sodipodi:r2="52.529018"
+       sodipodi:arg1="-2.8797933"
+       sodipodi:arg2="-2.2514747"
+       inkscape:flatsided="false"
+       inkscape:rounded="0.18"
+       inkscape:randomized="0"
+       d="m -322.49232,110.96904 c 4.18318,-15.611816 76.87408,2.17042 89.43474,-8.001 12.56065,-10.171418 10.28028,-84.970986 26.42068,-85.816868 16.14039,-0.845881 21.6912,73.782291 35.24626,82.585044 13.55505,8.802754 83.988988,-16.480349 89.781125,-1.391314 5.792138,15.089038 -63.468175,43.429548 -67.651345,59.041368 -4.18318,15.61182 41.62776,74.78557 29.06711,84.95699 -12.56066,10.17142 -60.9167,-46.94136 -77.0571,-46.09547 -16.14039,0.84588 -58.26161,62.70037 -71.81666,53.89762 -13.55505,-8.80276 25.81958,-72.4409 20.02745,-87.52994 -5.79214,-15.08903 -77.63543,-36.03461 -73.45226,-51.64643 z"
+       inkscape:transform-center-y="-2.5737391"
+       transform="matrix(0.05615902,0.2095883,-0.2095883,0.05615902,328.53109,527.838)" />
+  </g>
+</svg>

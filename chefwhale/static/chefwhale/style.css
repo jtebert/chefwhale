@@ -1,6 +1,12 @@
-/*
-940px
-*/
+
+/*** Colors
+ * Dark blue: #0b57a0
+ * Medium blue: #79b6ec
+ * Light blue: #cde5f8
+ * Orange: #ff8c3b
+ * Dark gray: #333
+ ***/
+
 
 html {
     font-family: 'Aller light', sans-serif;
@@ -71,61 +77,99 @@ body {
 
 #nav {
     display: block;
-    width: 280px;
+    /width: 400px;
     position: absolute;
-    top: 25px;
-    right: 0;
+    top: 15px;
+    right: 15px;
+    text-align: right;
 }
 
 #user-info {
-    margin: 0 25px 0 0;
+    margin: 0;
     text-align: right;
     font-size: 1.1em;
 }
-
-#user-info, #user-info a, user-info a:visited {
-    font-color: #fff;
+#user-info {
+    color: #333;
+}
+#user-info a,  user-info a:visited {
+    color: #0b57a0;
+    font-style: italic;
     text-decoration: none;
 }
-
-#user-info a {
-    font-style: italic;
+#user-info a:hover, #user-info a:visited:hover {
+color: #ff8c3b;
 }
 
 .menu-item {
 	width: 80px;
+    height: 120px;
 	position: relative;
 	display: inline-block;
-	margin: 0 10px 0 0;
+	margin: 0 0 0 10px;
+    overflow: hidden;
+    text-align: center;
 }
 
-.menu-item div {
-	height: 120px;
+.menu-item div.img {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -40px;
 }
 
-#nav #home {
-	background: url(images/home.png) no-repeat;
-	background-size: 100%;
+a .menu-item #home_img {
+    background: url(images/home_img.png) no-repeat;
+    background-size: 100%;
 }
-#nav #home:hover {
-	background: url(images/home_hover.png) no-repeat;
-	background-size: 100%;
+a:hover .menu-item #home_img {
+    background: url(images/home_hover_img.png) no-repeat;
+    background-size: 100%;
 }
-#nav #recipes {
-	background: url(images/recipes.png) no-repeat;
-	background-size: 100%;
+a .menu-item #recipes_img {
+    background: url(images/recipes_img.png) no-repeat;
+    background-size: 100%;
 }
-#nav #recipes:hover {
-	background: url(images/recipes_hover.png) no-repeat;
-	background-size: 100%;
+a:hover .menu-item #recipes_img {
+    background: url(images/recipes_hover_img.png) no-repeat;
+    background-size: 100%;
 }
-#nav #boxes {
-	background: url(images/boxes.png) no-repeat;
-	background-size: 100%;
+a .menu-item #boxes_img {
+    background: url(images/boxes_img.png) no-repeat;
+    background-size: 100%;
 }
-#nav #boxes:hover {
-	background: url(images/boxes_hover.png) no-repeat;
-	background-size: 100%;
+a:hover .menu-item #boxes_img {
+    background: url(images/boxes_hover_img.png) no-repeat;
+    background-size: 100%;
+}
+
+
+.menu-item img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.menu-item img#avatar {
+    padding: 10px;
+    top: 10px;
+    width: 60px;
+    margin-left: -40px;
+}
+
+a .menu-item h4 {
+    color: #0b57a0;
+    font-size: 1.4em;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+a:hover .menu-item h4, a:visited:hover .menu-item h4 {
+    color: #ff8c3b;
 }
 
 #border {
@@ -134,7 +178,6 @@ body {
     bottom: -1px;
     width: 100%;
     height: 35px;
-    /*padding-top: -25px;*/
     background-image: url('images/wave.png');
 }
 

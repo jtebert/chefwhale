@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="367.38617"
+   height="235.00002"
+   id="svg4272"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="seaweed.svg"
+   inkscape:export-filename="/home/jtebert/Copy/Projects/Programming/hungry_pterodactyl/seaweed2.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4274" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="188.46445"
+     inkscape:cy="245.40432"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="878"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata4277">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-58.580367,-817.36218)">
+    <path
+       style="fill:#29b058;fill-opacity:1;stroke:none"
+       d="m 116.1568,1050.6983 c -1.03818,-31.409 -11.73204,-72.07687 -21.588395,-102.84729 -7.691466,-24.01192 -22.422351,-43.68005 -33.231111,-66.3852 -5.566132,-11.69235 -3.032202,-35.53905 10.612975,-19.19768 13.002494,15.57169 11.915637,37.66146 24.337304,53.6686 9.875847,12.72647 1.537168,35.88018 17.233127,43.16888 14.55796,6.76025 15.00894,-19.0857 16.30268,-29.47349 3.68591,-29.59526 2.72437,-59.47413 4.02699,-89.24966 0.55259,-12.63137 19.23848,-37.00204 18.59696,-12.55385 -0.43897,16.72899 -12.08209,32.56762 -10.41645,49.10218 2.41374,23.9609 24.13302,-4.27215 30.76745,-13.92023 11.43167,-16.62442 24.17764,-37.56064 45.07997,-40.5345 19.93863,-2.83675 8.22534,19.30275 -4.52046,24.04408 -17.03472,6.33678 -23.97893,24.77192 -39.47025,35.56502 -22.38827,15.59834 -26.77973,45.84073 -29.42859,71.72062 -1.93252,18.88108 23.09522,8.64101 27.44161,-3.4662 4.34503,-12.10344 37.90464,-15.48477 25.10141,1.58193 -13.01892,17.35423 -40.96623,17.5117 -51.15742,38.96924 -8.80078,18.53005 -13.38846,38.76245 -13.79003,59.09175 -3.26674,2.1293 -10.31763,3.7308 -15.89777,0.7158 z"
+       id="path4290"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssssssssssssssssscc"
+       inkscape:export-filename="/home/jtebert/Copy/Projects/Programming/hungry_pterodactyl/seaweed1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#29b058;fill-opacity:1;stroke:none"
+       d="m 325.12215,1048.3304 c 1.80481,-29.3973 -6.98059,-60.91811 -29.66163,-80.97216 -11.07575,-9.79292 -29.41604,-12.85373 -34.035,-27.65989 -3.45911,-11.08822 13.57869,-7.01005 19.45334,-2.97829 14.98611,10.28495 24.89342,29.14597 42.30241,34.29912 10.67841,3.16086 6.16554,-14.52618 2.27,-20.88751 -8.36337,-13.65723 -8.32455,-30.48176 -10.53765,-45.99765 -1.63161,-11.43913 -6.37416,-21.00986 -11.06435,-30.87355 -4.07346,-8.56666 10.11866,-18.01686 14.60021,-7.19532 7.20529,17.39855 12.78487,35.43721 15.95572,54.04035 1.89898,11.14117 8.16301,22.32203 5.88226,33.38979 -2.59946,12.61431 9.85093,24.39591 18.80973,16.29206 10.08869,-9.12591 5.49496,-24.57893 7.1542,-36.80515 1.83202,-13.49932 1.17587,-27.21876 -1.09134,-40.56347 -2.07569,-12.21748 -11.27075,-22.7089 -11.64521,-35.11887 -0.3074,-10.18755 14.80104,-2.58206 18.13236,4.63374 3.61986,7.84079 5.36196,15.94873 4.23243,24.60622 -0.96904,7.42735 0.37169,19.22838 8.8672,21.13874 8.36777,1.88164 15.10406,-7.28376 15.25099,-15.59384 0.13732,-7.76748 1.08242,-16.55209 8.61032,-21.55727 8.3091,-5.52459 17.94622,1.40684 17.33032,10.45075 -0.47592,6.98842 -4.22771,13.41363 -8.27587,18.86478 -10.84264,14.60041 -33.3252,21.13176 -36.44094,40.30043 -2.68197,16.50005 -5.29374,33.22298 -14.28073,47.16976 -8.99874,13.96503 -21.91716,28.49353 -19.66241,46.46283 0.60478,4.8199 2.28944,9.4443 2.8373,14.2963 -8.33122,2.7639 -16.66243,7.9519 -24.99366,0.2581 z"
+       id="path4329"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csssssssssssssssssssssssscc"
+       inkscape:export-filename="/home/jtebert/Copy/Projects/Programming/hungry_pterodactyl/seaweed2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+  </g>
+</svg>

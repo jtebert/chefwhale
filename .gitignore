@@ -57,3 +57,4 @@ venv
 staticfiles
 
 *~
+*.kate-swp
