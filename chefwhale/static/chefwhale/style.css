@@ -3,19 +3,28 @@
 */
 
 html {
-    font-family: 'allerregular', sans-serif;
+    font-family: 'Aller light', sans-serif;
+    font-size: 1em;
 }
 
 html, body, #container {
     height: 100%;
 }
 
-h2, h3, h4, h5, h6 {
-    font-family: 'allerbold', sans-serif;
+h1, h2 {
+    font-family: 'Aller display', sans-serif;
+    font-weight: normal;
+}
+
+h3, h4, h5, h6 {
+    font-family: 'Aller bold', sans-serif;
+}
+
+:focus {
+    outline: none;
 }
 
 h1 {
-    font-family: 'aller_displayregular', sans-serif;
     font-weight: normal;
     text-align: center;
     font-size: 4em;
@@ -23,11 +32,14 @@ h1 {
     margin: 0;
 }
 
+p {
+    line-height: 1.5em;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: #79b6ec;
-    /background-color: #DDD;
 }
 
 #container {
@@ -36,6 +48,10 @@ body {
     height: 100%;
     margin: 0 auto -8em;
 }
+
+
+/*** Header ***/
+
 
 #header {
     position: relative;
@@ -48,7 +64,6 @@ body {
 
 #logo {
     padding: 0 25px;
-    /border: 1px solid red;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -56,23 +71,36 @@ body {
 
 #nav {
     display: block;
-    width: 275px;
+    width: 280px;
     position: absolute;
     top: 25px;
     right: 0;
-    /border: 1px solid green;
+}
+
+#user-info {
+    margin: 0 25px 0 0;
+    text-align: right;
+    font-size: 1.1em;
+}
+
+#user-info, #user-info a, user-info a:visited {
+    font-color: #fff;
+    text-decoration: none;
+}
+
+#user-info a {
+    font-style: italic;
 }
 
 .menu-item {
 	width: 80px;
 	position: relative;
 	display: inline-block;
-	margin: 0;
+	margin: 0 10px 0 0;
 }
 
 .menu-item div {
 	height: 120px;
-	/border: 1px solid red;
 }
 
 #nav #home {
@@ -103,10 +131,10 @@ body {
 #border {
     dislay: block;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     width: 100%;
     height: 35px;
-    padding-top: -25px;
+    /*padding-top: -25px;*/
     background-image: url('images/wave.png');
 }
 
@@ -117,20 +145,28 @@ body {
     z-index: -1;
 }
 
+
+/*** Content ***/
+
+
 #content {
     width: 700px;
-    /*height: 700px;*/
     background-color: #fff;
     margin: 10px auto 25px auto;
-    padding: 20px;
-    padding-top: 0;
-    /border: 1px solid red;
+    padding: 10px 20px;
 }
+
+.ingredient-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+/*** Footer ***/
+
 
 #push {
     height: 8em;
-    /width: 100%;
-    /background-color: red;
 }
 
 #footer {
@@ -156,7 +192,6 @@ body {
 #footer #seafloor {
     height: 40px;
     background-image: url('images/seafloor.png');
-    /border: 1px solid green;
 }
 
 #footer #text-area {
@@ -165,7 +200,6 @@ body {
 }
 
 #footer #text-area ul {
-    /border: 1px solid red;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -180,12 +214,19 @@ body {
 #footer a {
     display: inline-block;
     padding: 10px;
-}
-
-#footer a {
     text-decoration: none;
     color: #fff;
 }
+
+
+/*** Sandbox ***/
+
+
+
+
+
+/*** Responsive Design ***/
+
 
 @media screen and (max-width: 1025px) {
     #header {

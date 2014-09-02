@@ -3,7 +3,7 @@
 
 
 @font-face {
-    font-family: 'allerbold';
+    font-family: 'Aller bold';
     src: url('aller_bd-webfont.eot');
     src: url('aller_bd-webfont.eot?#iefix') format('embedded-opentype'),
          url('aller_bd-webfont.woff') format('woff'),
@@ -18,7 +18,7 @@
 
 
 @font-face {
-    font-family: 'allerregular';
+    font-family: 'Aller';
     src: url('aller_rg-webfont.eot');
     src: url('aller_rg-webfont.eot?#iefix') format('embedded-opentype'),
          url('aller_rg-webfont.woff') format('woff'),
@@ -33,7 +33,7 @@
 
 
 @font-face {
-    font-family: 'aller_lightregular';
+    font-family: 'Aller light';
     src: url('aller_lt-webfont.eot');
     src: url('aller_lt-webfont.eot?#iefix') format('embedded-opentype'),
          url('aller_lt-webfont.woff') format('woff'),
@@ -48,7 +48,7 @@
 
 
 @font-face {
-    font-family: 'aller_lightitalic';
+    font-family: 'Aller light italic';
     src: url('aller_ltit-webfont.eot');
     src: url('aller_ltit-webfont.eot?#iefix') format('embedded-opentype'),
          url('aller_ltit-webfont.woff') format('woff'),
@@ -63,7 +63,7 @@
 
 
 @font-face {
-    font-family: 'alleritalic';
+    font-family: 'Aller italic';
     src: url('aller_it-webfont.eot');
     src: url('aller_it-webfont.eot?#iefix') format('embedded-opentype'),
          url('aller_it-webfont.woff') format('woff'),
@@ -78,7 +78,7 @@
 
 
 @font-face {
-    font-family: 'allerbold_italic';
+    font-family: 'Aller bold italic';
     src: url('aller_bdit-webfont.eot');
     src: url('aller_bdit-webfont.eot?#iefix') format('embedded-opentype'),
          url('aller_bdit-webfont.woff') format('woff'),
@@ -93,7 +93,7 @@
 
 
 @font-face {
-    font-family: 'aller_displayregular';
+    font-family: 'Aller Display';
     src: url('allerdisplay-webfont.eot');
     src: url('allerdisplay-webfont.eot?#iefix') format('embedded-opentype'),
          url('allerdisplay-webfont.woff') format('woff'),

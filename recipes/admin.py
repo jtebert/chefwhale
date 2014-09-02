@@ -9,4 +9,5 @@ class InstructionInline(admin.StackedInline):
 
 class RecipeAdmin(admin.ModelAdmin):
     inlines = [IngredientInline, InstructionInline,]
+    list_display = ('name',)
 admin.site.register(Recipe, RecipeAdmin)

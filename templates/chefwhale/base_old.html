@@ -6,16 +6,20 @@
         <title>Chef Whale</title>
         <link rel="stylesheet" type="text/css"  href="{% static 'chefwhale/fonts/fonts.css' %}" />
         <link rel="stylesheet" type="text/css"  href="{% static 'chefwhale/style.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'chefwhale/jquery-ui/jquery-ui.min.css' %}"/>
+        <script src="{% static 'chefwhale/jquery-ui/external/jquery/jquery.js' %}"></script>
+        <script src="{% static 'chefwhale/jquery-ui/jquery-ui.min.js' %}"></script>
+        <script src="{% static 'chefwhale/js/main_jquery_ui.js' %}"></script>
     </head>
     <body>
         <div id="container">
         
             <div id="header">
                 <div id="nav">
-                    <a href="#"><div class="menu-item">
+                    <a href="{% url 'recipes:index' %}"><div class="menu-item">
 				        <div id="home"></div>
 			        </div></a>
-			        <a href="#"><div class="menu-item">
+			        <a href="{% url 'recipes:recipe_list' %}"><div class="menu-item">
 				        <div id="recipes"></div>
 			        </div></a>
 			        <a href="#"><div class="menu-item">

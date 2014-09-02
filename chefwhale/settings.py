@@ -42,7 +42,12 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'recipes',
+    'userena',
+    'guardian',
+    'easy_thumbnails',
+    'accounts',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -57,6 +62,12 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'chefwhale.urls'
 
 WSGI_APPLICATION = 'chefwhale.wsgi.application'
+
+AUTHENTICATION_BACKENDS = (
+    'userena.backends.UserenaAuthenticationBackend',
+    'guardian.backends.ObjectPermissionBackend',
+    'django.contrib.auth.backends.ModelBackend',
+)
 
 
 # Database
@@ -90,8 +101,8 @@ STATIC_URL = '/static/'
 
 # Parse database configuration from $DATABASE_URL
 import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
-DATABASES['default']['ENGINE'] = 'django.db.backends.postgresql_psycopg2'
+#DATABASES['default'] =  dj_database_url.config()
+#DATABASES['default']['ENGINE'] = 'django.db.backends.postgresql_psycopg2'
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
@@ -109,3 +120,26 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
     BASE_DIR + '/static/'
 )
+
+
+# Email settings (for userena)
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'ebertjulia@gmail.com'
+#EMAIL_HOST_PASSWORD = 'mhwvigqeabikiqxm'
+EMAIL_HOST_PASSWORD = 'wincentson'
+DEFAULT_FROM_EMAIL = 'ebertjulia@gmail.com'
+SERVER_EMAIL = 'ebertjulia@gmail.com'
+
+ANONYMOUS_USER_ID = -1
+
+AUTH_PROFILE_MODULE = 'accounts.UserProfile'
+USERENA_SIGNIN_REDIRECT_URL = '/accounts/%(username)s/'
+LOGIN_URL = '/accounts/signin/'
+LOGOUT_URL = '/accounts/signout/'
+
+SITE_ID = 1
