@@ -6,21 +6,34 @@ from models import Recipe, Box
 
 
 def index(request):
-    return render(request, 'recipes/index.html')
+    profile = request.user.get_profile()
+    return render(
+        request, 'recipes/index.html',{'profile': profile})
 
 
-class RecipeList(generic.ListView):
-    template_name = 'recipes/recipes.html'
-    context_object_name = 'recipes'
-
-    def get_queryset(self):
-        """ List all recipes """
-        return Recipe.objects.order_by('name')
+def recipe_list(request):
+    recipes = Recipe.objects.order_by('name')
+    profile = request.user.get_profile()
+    
+    return render(
+        request, 'recipes/recipe_list.html',
+        {
+            'recipes': recipes,
+            'profile': profile,
+        }
+    )
 
 def recipe_detail(request, pk):
     recipe = Recipe.objects.get(pk=pk)
+    profile = request.user.get_profile()
     
-    return render(request, 'recipes/recipe_detail.html', {'recipe': recipe})
+    return render(
+        request, 'recipes/recipe_detail.html',
+        {
+            'recipe': recipe,
+            'profile': profile,
+        }
+    )
 
 class BoxList(generic.ListView):
     template_name = 'recipes/box_list.html'
@@ -29,3 +42,16 @@ class BoxList(generic.ListView):
     def get_queryset(self):
         """List all recipe boxes"""
         return Box.objects.order_by('name')
+
+
+def box_list(request):
+    boxes = Box.objects.order_by('name')
+    profile = request.user.get_profile()
+    
+    return render(
+        request, 'recipes/box_list.html',
+        {
+            'boxes': boxes,
+            'profile': profile,
+        }
+    )

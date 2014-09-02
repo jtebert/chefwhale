@@ -40,7 +40,7 @@
                             <div class="img" id="boxes_img"></div>
                             <h4>Boxes</h4>
                         </div></a>
-                        <a href="#"><div class="menu-item">
+                        <a href="{% url 'userena_profile_detail' profile.user.username %}"><div class="menu-item">
                             <img id="avatar" src="{{ profile.get_mugshot_url }}" alt="{% trans 'Your mugshot' %}" />
                             <h4>Account</h4>
                         </div></a>
