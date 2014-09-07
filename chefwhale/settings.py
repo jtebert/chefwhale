@@ -116,6 +116,9 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
 
+MEDIA_ROOT = 'media'
+MEDIA_URL = '/media/'
+
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
     BASE_DIR + '/static/'
@@ -130,8 +133,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'ebertjulia@gmail.com'
-#EMAIL_HOST_PASSWORD = 'mhwvigqeabikiqxm'
-EMAIL_HOST_PASSWORD = 'wincentson'
+EMAIL_HOST_PASSWORD = 'mhwvigqeabikiqxm'
 DEFAULT_FROM_EMAIL = 'ebertjulia@gmail.com'
 SERVER_EMAIL = 'ebertjulia@gmail.com'
 
@@ -143,3 +145,5 @@ LOGIN_URL = '/accounts/signin/'
 LOGOUT_URL = '/accounts/signout/'
 
 SITE_ID = 1
+
+#SITE_HOST = '127.0.0.1:5000'

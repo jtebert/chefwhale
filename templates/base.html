@@ -21,7 +21,7 @@
                 
                     
                     {% if user.is_authenticated %}
-                        <p id="user-info">Signed in as <b>{{ user.username }}</b>. <a href="{% url 'userena_signout' %}">Sign out</a></p>
+                        <p id="user-info">Hello, <b>{{ user.username }}</b>. <a href="{% url 'userena_signout' %}">Sign out</a></p>
                     {% else %}
                         <p id="user-info"><a href="{% url 'userena_signin' %}">Sign in</a></p>
                     {% endif %}

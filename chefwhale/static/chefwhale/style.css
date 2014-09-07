@@ -102,7 +102,7 @@ color: #ff8c3b;
 }
 
 .menu-item {
-	width: 80px;
+	width: 5.1em;
     height: 120px;
 	position: relative;
 	display: inline-block;
@@ -265,7 +265,13 @@ a:hover .menu-item h4, a:visited:hover .menu-item h4 {
 /*** Sandbox ***/
 
 
-
+#box-nav {
+    /*border: 1px solid red;*/
+    float: left;
+    margin-right: 1em;
+    list-style: none;
+    padding-left: 0;
+}
 
 
 /*** Responsive Design ***/

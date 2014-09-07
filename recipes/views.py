@@ -1,12 +1,17 @@
 from django.shortcuts import render
 from django.views import generic
 from django.http import HttpResponseRedirect, HttpResponse
+from django.contrib.auth.models import AnonymousUser
 
 from models import Recipe, Box
 
 
 def index(request):
-    profile = request.user.get_profile()
+    print request.user
+    if isinstance(request.user, AnonymousUser):
+        profile = None
+    else:
+        profile = request.user.get_profile()
     return render(
         request, 'recipes/index.html',{'profile': profile})
 
