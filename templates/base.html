@@ -8,10 +8,11 @@
         <link rel="stylesheet" type="text/css"  href="{% static 'chefwhale/fonts/fonts.css' %}" />
         <link rel="stylesheet" type="text/css"  href="{% static 'chefwhale/style.css' %}" />
         <link rel="stylesheet" type="text/css" href="{% static 'chefwhale/jquery-ui/jquery-ui.min.css' %}"/>
-        <link rel="shortcut icon" href="{% static 'chefwhale/images/favicon.ico' %}"></link> 
+        <link rel="shortcut icon" href="{% static 'chefwhale/images/favicon.ico' %}"/>
         <script src="{% static 'chefwhale/jquery-ui/external/jquery/jquery.js' %}"></script>
         <script src="{% static 'chefwhale/jquery-ui/jquery-ui.min.js' %}"></script>
         <script src="{% static 'chefwhale/js/main_jquery_ui.js' %}"></script>
+        <script src="{% static 'chefwhale/js/jquery.nicefileinput.min.js' %}"></script>
     </head>
     <body>
         <div id="container">
@@ -40,8 +41,8 @@
                             <div class="img" id="boxes_img"></div>
                             <h4>Boxes</h4>
                         </div></a>
-                        <a href="{% url 'userena_profile_detail' profile.user.username %}"><div class="menu-item">
-                            <img id="avatar" src="{{ profile.get_mugshot_url }}" alt="{% trans 'Your mugshot' %}" />
+                        <a href="{% url 'userena_profile_detail' user.username %}"><div class="menu-item">
+                            <img id="avatar" src="{{ user.get_profile.get_mugshot_url }}" alt="{% trans 'Your mugshot' %}" />
                             <h4>Account</h4>
                         </div></a>
                     {% endif %}
@@ -63,7 +64,7 @@
             <div id="seafloor"></div>
             <div id="text-area">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="{% url 'recipes:index' %}">Home</a></li>
                     <li><img src="{% static 'chefwhale/images/starfish.png' %}" /></li>
                     <li><a href="#">Contact</a></li>
                     <li><img src="{% static 'chefwhale/images/starfish.png' %}" /></li>

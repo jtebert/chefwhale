@@ -4,17 +4,30 @@ from accounts.models import UserProfile
 
 class Box(models.Model):
     name = models.CharField(max_length=100)
+    user = models.ForeignKey(UserProfile)
+
+    class Meta:
+        verbose_name_plural = "boxes"
+
+    def __unicode__(self):
+        return self.name
     
     
 class BoxTab(models.Model):
     name = models.CharField(max_length=100)
     box = models.ForeignKey(Box)
 
+    def __unicode__(self):
+        return self.name
+
 
 class Recipe(models.Model):
     name = models.CharField(max_length=100)
     boxes = models.ManyToManyField(BoxTab)
     user = models.ForeignKey(UserProfile)
+
+    def __unicode__(self):
+        return self.name
 
 
 class Ingredient(models.Model):

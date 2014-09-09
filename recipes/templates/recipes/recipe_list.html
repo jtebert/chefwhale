@@ -4,7 +4,9 @@
 {% block content %}
 <h2>Recipes</h2>
 <ul>
-    {% for recipe in recipes %}
+    {{ user.recipe_set.all }}
+
+    {% for recipe in user.recipes %}
         <li><a href="{% url 'recipes:recipe_detail' pk=recipe.id %}">{{ recipe.name }}</a></li>
     {% endfor %}
 </ul>
