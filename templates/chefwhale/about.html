@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block content %}
+
+<h2>{% trans "About Chef Whale" &}</h2>
+
+<p>Chef Whale is an open source personal recipe box.</p>
+
+<p>Actually, what makes Chef Whale unique is that it's made up of as many recipe boxes as you want, making it easy to browse recipes for inspiration. You can have a box organized by meal and scroll through all your breakfast options, or look through that box you made for parties and everything you picked out for that cheese party.</p>
+
+<p>But along the way, watch out for Chef Whale's nemesis - Forka: The orca with a fork!<p>
+
+<h3>Help make Chef Whale better!</h3>
+
+Is there a feature you think is missing from Chef Whale? Did you find a problem on the website? <a href={% url "recipes:contact" %}>Click here</a> to let me know so I can work on it!
+
+<h4>For the technically inclined:</h4>
+
+<p>Because Chef Whale is open source, you can contribute to improve the site by <a href='https://github.com/jtebert/chefwhale'>forking the project on GitHub.</a>
+
+{% endblock %}
