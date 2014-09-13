@@ -140,10 +140,10 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'ebertjulia@gmail.com'
-EMAIL_HOST_PASSWORD = 'mhwvigqeabikiqxm'
-DEFAULT_FROM_EMAIL = 'ebertjulia@gmail.com'
-SERVER_EMAIL = 'ebertjulia@gmail.com'
+EMAIL_HOST_USER = 'chefwhale.email@gmail.com'
+EMAIL_HOST_PASSWORD = 'ofhhzetprzjbfbev'
+DEFAULT_FROM_EMAIL = 'chefwhale.email@gmail.com'
+SERVER_EMAIL = 'chefwhale.email@gmail.com'
 
 ANONYMOUS_USER_ID = -1
 
