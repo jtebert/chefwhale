@@ -56,60 +56,87 @@ body {
 }
 
 
+a,  a:visited {
+    color: #0b57a0;
+    text-decoration: none;
+}
+a:hover, a:visited:hover {
+    color: #ff8c3b;
+}
+
+
 /*** Header ***/
 
 
-#header {
+#header, #header-compact {
     position: relative;
     margin: 0;
-    padding-top: 25px;
     width: 100%;
-    height: 175px;
     background-color: #cde5f8;
+}
+#header {
+    padding-top: 25px;
+    height: 175px;
+}
+#header-compact {
+    padding-top: 35px;
+    height: 75px;
 }
 
 #logo {
+}
+
+#logo-compact {
     padding: 0 25px;
     position: absolute;
     left: 0;
     bottom: 0;
+    height: 85px;
 }
 
-#nav {
+#nav, #nav-compact {
     display: block;
     position: absolute;
-    top: 15px;
     right: 15px;
     text-align: right;
+}
+#nav {
+    top: 15px;
+}
+#nav-compact {
+    top: 0;
+}
+
+#nav-compact ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
 }
 
 #user-info {
     margin: 0;
     text-align: right;
     font-size: 1.1em;
-}
-#user-info {
     color: #333;
 }
-a,  a:visited {
-    color: #0b57a0;
-    text-decoration: none;
-}
-a:hover, a:visited:hover {
-color: #ff8c3b;
-}
 
-.menu-item {
-	width: 5.1em;
-    height: 120px;
+#nav .menu-item, #nav-compact .menu-item {
 	position: relative;
 	display: inline-block;
-	margin: 0 0 0 10px;
     overflow: hidden;
+}
+#nav .menu-item {
+    width: 5.1em;
+    height: 120px;
+    margin: 0 0 0 10px;
     text-align: center;
 }
+#nav-compact .menu-item {
+    text-align: left;
+}
 
-.menu-item div.img {
+#nav .menu-item div.img {
     height: 80px;
     width: 80px;
     position: absolute;
@@ -117,47 +144,56 @@ color: #ff8c3b;
     left: 50%;
     margin-left: -40px;
 }
+#nav-compact .menu-item div.img {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+}
 
-a .menu-item #home_img {
+a #home_img {
     background: url(images/home_img.png) no-repeat;
     background-size: 100%;
 }
-a:hover .menu-item #home_img {
+a:hover #home_img {
     background: url(images/home_hover_img.png) no-repeat;
     background-size: 100%;
 }
-a .menu-item #recipes_img {
+
+a #recipes_img {
     background: url(images/recipes_img.png) no-repeat;
     background-size: 100%;
 }
-a:hover .menu-item #recipes_img {
+
+a:hover #recipes_img {
     background: url(images/recipes_hover_img.png) no-repeat;
     background-size: 100%;
 }
-a .menu-item #boxes_img {
+
+a #boxes_img {
     background: url(images/boxes_img.png) no-repeat;
     background-size: 100%;
 }
-a:hover .menu-item #boxes_img {
+a:hover #boxes_img {
     background: url(images/boxes_hover_img.png) no-repeat;
     background-size: 100%;
 }
 
-
-.menu-item img {
+#nav .menu-item img {
     position: absolute;
     top: 0;
     left: 50%;
 }
-.menu-item img#avatar {
+#nav img#avatar {
     padding: 10px;
     top: 10px;
     width: 60px;
     margin-left: -40px;
 }
+#nav-compact img#avatar {
+    width: 45px;
+}
 
-a .menu-item h4 {
-    color: #0b57a0;
+#nav h4 {
     font-size: 1.4em;
     margin: 0;
     position: absolute;
@@ -165,18 +201,31 @@ a .menu-item h4 {
     text-align: center;
     width: 100%;
 }
+#nav-compact h4 {
+    font-size: 1.4em;
+    display: inline-block;
+    position: relative;
+    margin: 0 10px 0 5px;
+    padding: 1em 0;
+}
 
-a:hover .menu-item h4, a:visited:hover .menu-item h4 {
+#nav a:hover h4, #nav a:visited:hover h4 {
     color: #ff8c3b;
 }
 
-#border {
-    dislay: block;
+#border, #border-compact {
+    display: block;
     position: absolute;
     bottom: -1px;
     width: 100%;
+}
+#border {
     height: 35px;
     background-image: url('images/wave.png');
+}
+#border-compact {
+    height: 20px;
+    background-image: url('images/wave-compact.png');
 }
 
 #fish {

@@ -1,5 +1,42 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
+{% load i18n %}
+
+{% block header %}
+<div id="header">
+    <div id="nav">
+        <p id="user-info">
+        {% if user.is_authenticated %}
+            {% trans "Hello," %} <b>{{ user.username }}</b>. <a href="{% url 'userena_signout' %}">{% trans "Sign out" %}</a>
+        {% else %}
+            <a href="{% url 'userena_signin' %}">Sign in</a>
+        {% endif %}
+        </p>
+
+        <a href="{% url 'recipes:index' %}"><div class="menu-item">
+            <div class="img" id="home_img"></div>
+            <h4>{% trans "Home" %}</h4>
+        </div></a>
+
+        {% if user.is_authenticated %}
+            <a href="{% url 'recipes:recipe_list' %}"><div class="menu-item">
+                <div class="img" id="recipes_img"></div>
+                <h4>{% trans "Recipes" %}</h4>
+            </div></a>
+            <a href="{% url 'recipes:box_list' %}"><div class="menu-item">
+                <div class="img" id="boxes_img"></div>
+                <h4>{% trans "Boxes" %}</h4>
+            </div></a>
+            <a href="{% url 'userena_profile_detail' user.username %}"><div class="menu-item">
+                <img id="avatar" src="{{ user.get_profile.get_mugshot_url }}" alt="{% trans 'Your mugshot' %}" />
+                <h4>{% trans "Account" %}</h4>
+            </div></a>
+        {% endif %}
+    </div>
+    <img id="logo" src="{% static 'chefwhale/images/whale_title.png' %}" />
+    <div id="border"></div>
+</div>
+{% endblock %}
 
 {% block content %}
     <h1>Coming Soon</h1>
