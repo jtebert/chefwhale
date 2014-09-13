@@ -149,6 +149,7 @@ ANONYMOUS_USER_ID = -1
 
 AUTH_PROFILE_MODULE = 'accounts.UserProfile'
 USERENA_SIGNIN_REDIRECT_URL = '/accounts/%(username)s/'
+USERENA_MUGSHOT_DEFAULT = 'mm'
 LOGIN_URL = '/accounts/signin/'
 LOGOUT_URL = '/accounts/signout/'
 

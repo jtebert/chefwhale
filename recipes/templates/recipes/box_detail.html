@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+    <h2>{{ box.name }}</h2>
+
+    {% for tab in box.boxtab_set.all %}
+        <h4>{{ tab.name }}</h4>
+        <ul>
+            {% for recipe in tab.recipe_set.all %}
+                <li><a href="{% url 'recipes:recipe_detail' pk=recipe.id %}">{{ recipe.name }}</a></li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+
+{% endblock %}

@@ -23,8 +23,15 @@ class BoxTab(models.Model):
 
 class Recipe(models.Model):
     name = models.CharField(max_length=100)
-    boxes = models.ManyToManyField(BoxTab)
     user = models.ForeignKey(UserProfile)
+    image = models.ImageField(upload_to='recipe_images/', blank=True, null=True)
+    recipe_yield = models.CharField(max_length=20)
+    time_active = models.CharField(max_length=20)
+    time_total = models.CharField(max_length=20)
+    description = models.TextField()
+    boxes = models.ManyToManyField(BoxTab)
+    source = models.CharField(max_length=300)
+
 
     def __unicode__(self):
         return self.name

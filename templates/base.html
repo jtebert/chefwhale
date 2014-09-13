@@ -1,7 +1,8 @@
+<!DOCTYPE html>
+
 {% load staticfiles %}
 {% load i18n %}
 
-<!DOCTYPE html>
 <html>
     <head>
         <title>Chef Whale</title>
@@ -73,7 +74,7 @@
                     <li><img src="{% static 'chefwhale/images/starfish.png' %}" /></li>
                     <li><a href="#">Contact</a></li>
                     <li><img src="{% static 'chefwhale/images/starfish.png' %}" /></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="{% url 'recipes:about' %}">About</a></li>
                 </ul>
             </div>
         </div>

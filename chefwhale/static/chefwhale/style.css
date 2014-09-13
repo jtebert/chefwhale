@@ -91,7 +91,7 @@ a:hover, a:visited:hover {
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 85px;
+    height: 100px;
 }
 
 #nav, #nav-compact {
@@ -104,7 +104,7 @@ a:hover, a:visited:hover {
     top: 15px;
 }
 #nav-compact {
-    top: 0;
+    top: 10px;
 }
 
 #nav-compact ul {
@@ -205,8 +205,8 @@ a:hover #boxes_img {
     font-size: 1.4em;
     display: inline-block;
     position: relative;
-    margin: 0 10px 0 5px;
-    padding: 1em 0;
+    margin: 0;
+    padding: 0 10px 0 5px;
 }
 
 #nav a:hover h4, #nav a:visited:hover h4 {
@@ -241,8 +241,8 @@ a:hover #boxes_img {
 
 #content {
     width: 800px;
-    /background-color: rgba(255, 255, 255, 0.7);;
-    background-color: #cde5f8;
+    background-color: rgba(255, 255, 255, 0.6);;
+    /background-color: #cde5f8;
     margin: 10px auto 25px auto;
     padding: 30px;
 }
@@ -261,10 +261,11 @@ a:hover #boxes_img {
 }
 
 #footer {
+    font-family: 'Aller', sans-serif;
     clear: both;
     position: relative;
     width: 100%;
-    height: 8em;
+    height: 4em;
 }
 
 #footer > img {
@@ -358,7 +359,7 @@ form .control-group {
     margin: 1em 0;
 }
 
-form label {
+.control-group > label {
     font-family: "Aller", serif;
     vertical-align: center;
     display: block;
