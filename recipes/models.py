@@ -1,8 +1,10 @@
 from django.db import models
 from accounts.models import UserProfile
+from utils import pkgen
 
 
 class Box(models.Model):
+    id = models.CharField(max_length=6, primary_key=True, default=pkgen)
     name = models.CharField(max_length=100)
     user = models.ForeignKey(UserProfile)
 
@@ -22,15 +24,17 @@ class BoxTab(models.Model):
 
 
 class Recipe(models.Model):
+    id = models.CharField(max_length=6, primary_key=True, default=pkgen)
     name = models.CharField(max_length=100)
     user = models.ForeignKey(UserProfile)
     image = models.ImageField(upload_to='recipe_images/', blank=True, null=True)
-    recipe_yield = models.CharField(max_length=20)
-    time_active = models.CharField(max_length=20)
-    time_total = models.CharField(max_length=20)
-    description = models.TextField()
+    recipe_yield = models.CharField(max_length=50, blank=True)
+    time_active = models.CharField(max_length=50, blank=True)
+    time_total = models.CharField(max_length=50, blank=True)
+    description = models.TextField(blank=True)
+    source = models.CharField(max_length=300, blank=True)
+    #privacy = models.CharField(max_length=10)
     boxes = models.ManyToManyField(BoxTab)
-    source = models.CharField(max_length=300)
 
 
     def __unicode__(self):

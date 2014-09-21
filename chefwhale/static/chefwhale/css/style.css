@@ -151,30 +151,30 @@ a:hover, a:visited:hover {
 }
 
 a #home_img {
-    background: url(images/home_img.png) no-repeat;
+    background: url(../images/home_img.png) no-repeat;
     background-size: 100%;
 }
 a:hover #home_img {
-    background: url(images/home_hover_img.png) no-repeat;
+    background: url(../images/home_hover_img.png) no-repeat;
     background-size: 100%;
 }
 
 a #recipes_img {
-    background: url(images/recipes_img.png) no-repeat;
+    background: url(../images/recipes_img.png) no-repeat;
     background-size: 100%;
 }
 
 a:hover #recipes_img {
-    background: url(images/recipes_hover_img.png) no-repeat;
+    background: url(../images/recipes_hover_img.png) no-repeat;
     background-size: 100%;
 }
 
 a #boxes_img {
-    background: url(images/boxes_img.png) no-repeat;
+    background: url(../images/boxes_img.png) no-repeat;
     background-size: 100%;
 }
 a:hover #boxes_img {
-    background: url(images/boxes_hover_img.png) no-repeat;
+    background: url(../images/boxes_hover_img.png) no-repeat;
     background-size: 100%;
 }
 
@@ -221,11 +221,11 @@ a:hover #boxes_img {
 }
 #border {
     height: 35px;
-    background-image: url('images/wave.png');
+    background-image: url('../images/wave.png');
 }
 #border-compact {
     height: 20px;
-    background-image: url('images/wave-compact.png');
+    background-image: url('../images/wave-compact.png');
 }
 
 #fish {
@@ -283,7 +283,7 @@ a:hover #boxes_img {
 
 #footer #seafloor {
     height: 40px;
-    background-image: url('images/seafloor.png');
+    background-image: url('../images/seafloor.png');
 }
 
 #footer #text-area {
@@ -347,12 +347,17 @@ a:hover #boxes_img {
 /*** Forms (crispy) ***/
 
 
-input[type=text], input[type=password] {
-    line-height: 1.5em;
+input[type=text], input[type=password], textarea {
+    line-height: 1.25em;
     border: none;
     font-family: 'Aller light', sans-serif;
     font-size: 1em;
-    padding: 0 .5em;
+    padding: .25em .5em;
+    border: 1px solid #fff;
+}
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+    border: 1px solid #79b6ec;
 }
 
 form .control-group {
@@ -382,6 +387,10 @@ form [id^=error_] {
 
 form .asteriskField {
     display: none;
+}
+
+.overflow {
+    max-height: 10em;
 }
 
 /* NFI file input */

@@ -1,10 +1,14 @@
 {% extends 'base.html' %}
-{% load staticfiles %}
+{% load staticfiles i18n %}
 
 {% block content %}
-    <h1>Recipe</h1>
-    
+    {% if profile == recipe.user %}
+        <a href="{% url 'recipes:recipe_edit' pk=recipe.pk %}">{% trans 'Edit' %}</a>
+    {% endif %}
+
     <h2>{{ recipe.name }}</h2>
+
+    <p>{{ recipe.description }}</p>
     
     <h3>Ingredients</h3>
     <ul class="ingredient-list">

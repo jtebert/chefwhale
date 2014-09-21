@@ -8,6 +8,19 @@ $(document).ready(function () {
 
     // Fix select width
     $.each($('select'), function () {
-        $(this).selectmenu({ width : $(this).width() + 50})
+        $(this).selectmenu({ width: $(this).width() + 50}).selectmenu("menuWidget").addClass('overflow');
+    });
+
+    // Dynamic formsets
+    $(function() {
+       $('#ingredient-form-table tr').formset({
+           prefix: '{{ ingredient_form.prefix }}',
+           formCssClass: 'dynamic-ingredient-formset'
+       });
+
+       $('#instruction-form-table tbody tr').formset({
+           prefix: '{{ instruction_form.prefix }}',
+           formCssClass: 'dynamic-instruction-formset'
+       });
     });
 })

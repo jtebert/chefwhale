@@ -1,15 +1,61 @@
 {% extends 'base.html' %}
-{% load staticfiles %}
+{% load staticfiles crispy_forms_tags i18n %}
+
+{% block extra_head %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static 'chefwhale/css/recipe_add.css' %}" />
+{% endblock %}
 
 {% block content %}
-    <h2>Add Recipe</h2>
-
-    <h3>Ingredients</h3>
-    <ul class="ingredient-list">
-    </ul>
-
-    <h3>Instructions</h3>
-    <ol class="instruction-list">
-    </ol>
-
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{recipe_form.name }}
+        <div id="recipe-img-box"></div>
+        <div id="info-box">
+            <table>
+                <tr>
+                    <td>{{recipe_form.recipe_yield.label_tag }}</td>
+                    <td>{{ recipe_form.recipe_yield }}</td>
+                </tr>
+                <tr>
+                    <td>{{recipe_form.time_active.label_tag }}</td>
+                    <td>{{ recipe_form.time_active }}</td>
+                </tr>
+                <tr>
+                    <td>{{recipe_form.time_total.label_tag }}</td>
+                    <td>{{ recipe_form.time_total }}</td>
+                </tr>
+            </table>
+            {{ recipe_form.description }}
+        </div>
+        <div id="ingredients-box">
+            <h3>{% trans 'Ingredients' %}</h3>
+            <table id="ingredient-form-table">
+                <tbody>
+                {% for form in ingredient_form.forms %}
+                <tr>
+                    <td>{{ form|crispy }}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            {{ ingredient_form.management_form }}
+        </div>
+        <div id="instructions-box">
+            <h3>{% trans 'Instructions' %}</h3>
+            {{ instruction_form.errors }}
+            <table id="instruction-form-table">
+                <tbody>
+                {% for form in instruction_form.forms %}
+                <tr>
+                    <td>{{ form|crispy }}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            {{ instruction_form.management_form }}
+        </div>
+        {{ recipe_form.source }}
+        <input type="submit">
+    </form>
 {% endblock %}

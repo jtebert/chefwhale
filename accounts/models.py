@@ -11,3 +11,9 @@ class UserProfile(UserenaBaseProfile):
                                 verbose_name=_('user'),
                                 related_name='user_profile')
     timezone = TimeZoneField(default='America/New_York')
+    PRIVACY_CHOICES = (
+        ('public', _("Public")),
+        ('private', _("Private")),
+        ('secret', _("Secret"))
+    )
+    default_recipe_privacy = models.CharField(max_length=10, choices=PRIVACY_CHOICES, default='public')

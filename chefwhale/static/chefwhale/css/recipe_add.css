@@ -1,0 +1,34 @@
+#id_name {
+    font-size: 1.5em;
+    width: calc(100% - 1em);
+    margin-bottom: 1em;
+}
+
+#recipe-img-box {
+    float: left;
+    width: 400px;
+    height: 300px;
+    background: #fff;
+    margin-right: 1em;
+}
+
+#info-box {
+    /border: 1px solid red;
+    float: left;
+}
+
+#info-box table * {
+    margin: 0;
+}
+#info-box td {
+    padding: 0 .5em .5em 0;
+}
+
+#id_description {
+    width: 350px;
+    height: 150px;
+}
+
+#ingredients-box {
+    clear: both;
+}
