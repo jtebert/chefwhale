@@ -100,11 +100,37 @@ def recipe_add(request):
 @login_required
 def recipe_edit(request, pk):
     # check if correct user
+    profile = profile_from_request(request)
     recipe = get_object_or_404(Recipe, pk=pk)
-    if not profile_from_request(request) == recipe.user:
+    if not profile == recipe.user:
         raise PermissionDenied
+    if request.method == 'POST':
+        recipe_form = RecipeForm(request.POST, instance=recipe)
+        if recipe_form.is_valid():
+            recipe = recipe_form.save(commit=False)
+            recipe.user = profile_from_request(request)
+            ingredient_form = IngredientFormSet(request.POST, prefix='ingredient', instance=recipe)
+            instruction_form = InstructionFormSet(request.POST, prefix='instruction', instance=recipe)
+            if ingredient_form.is_valid() and instruction_form.is_valid():
+                recipe = recipe.save()
+                ingredient_form.save()
+                instruction_form.save()
+                messages.success(request, _("Recipe added."))
+                return HttpResponseRedirect(reverse("recipes:recipe_list"))
+    else:  # GET
+        recipe_form = RecipeForm(instance=recipe)
+        ingredient_form = IngredientFormSet(prefix='ingredient', instance=recipe)
+        instruction_form = InstructionFormSet(prefix='instruction', instance=recipe)
 
-    return HttpResponse("Edit this!")
+    return render(
+        request, 'recipes/recipe_add.html',
+        {
+            'profile': profile,
+            'recipe_form': recipe_form,
+            'ingredient_form': ingredient_form,
+            'instruction_form': instruction_form,
+        }
+    )
 
 
 @login_required

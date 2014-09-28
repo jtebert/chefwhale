@@ -60,7 +60,7 @@ a,  a:visited {
     color: #0b57a0;
     text-decoration: none;
 }
-a:hover, a:visited:hover {
+a:hover, a:visited:hover, a:focus, a:visited:focus {
     color: #ff8c3b;
 }
 
@@ -80,7 +80,7 @@ a:hover, a:visited:hover {
 }
 #header-compact {
     padding-top: 35px;
-    height: 75px;
+    height: 95px;
 }
 
 #logo {
@@ -91,7 +91,7 @@ a:hover, a:visited:hover {
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 100px;
+    height: 120px;
 }
 
 #nav, #nav-compact {
@@ -154,7 +154,7 @@ a #home_img {
     background: url(../images/home_img.png) no-repeat;
     background-size: 100%;
 }
-a:hover #home_img {
+a:hover #home_img, a:focus #home_img {
     background: url(../images/home_hover_img.png) no-repeat;
     background-size: 100%;
 }
@@ -164,7 +164,7 @@ a #recipes_img {
     background-size: 100%;
 }
 
-a:hover #recipes_img {
+a:hover #recipes_img, a:focus #recipes_img {
     background: url(../images/recipes_hover_img.png) no-repeat;
     background-size: 100%;
 }
@@ -173,7 +173,7 @@ a #boxes_img {
     background: url(../images/boxes_img.png) no-repeat;
     background-size: 100%;
 }
-a:hover #boxes_img {
+a:hover #boxes_img, a:focus #boxes_img {
     background: url(../images/boxes_hover_img.png) no-repeat;
     background-size: 100%;
 }
@@ -209,7 +209,7 @@ a:hover #boxes_img {
     padding: 0 10px 0 5px;
 }
 
-#nav a:hover h4, #nav a:visited:hover h4 {
+#nav a:hover h4, #nav a:visited:hover h4, #nav a:focus h4, #nav a:visited:focus h4 {
     color: #ff8c3b;
 }
 
@@ -331,7 +331,7 @@ a:hover #boxes_img {
     padding: .5em;
     width: 8em;
 }
-#box-nav a:hover {
+#box-nav a:hover, #box-nav a:focus {
     background-color: #ff8c3b;
 }
 #box-nav a:active {
@@ -405,7 +405,7 @@ form .asteriskField {
 	padding: 0 .5em;
 	color: #fff;
 }
-.NFI-button:hover {
+.NFI-button:hover, .NFI-button:focus {
     background-color: #ff8c3b;
 }
 .NFI-button:active {

@@ -23,4 +23,4 @@ $(document).ready(function () {
            formCssClass: 'dynamic-instruction-formset'
        });
     });
-})
+});

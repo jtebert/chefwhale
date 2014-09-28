@@ -24,13 +24,11 @@
             <div id="header-compact">
                 <div id="nav-compact">
                     <p id="user-info">
-                        {% comment %}
                         {% if user.is_authenticated %}
                             {% trans "Hello," %} <b>{{ user.username }}</b>. <a href="{% url 'userena_signout' %}">{% trans "Sign out" %}</a>
                         {% else %}
                         <a href="{% url 'userena_signin' %}">Sign in</a>
                         {% endif %}
-                        {% endcomment %}
                     </p>
                     <ul>
                         <li class="menu-item"><a href="{% url 'recipes:index' %}">
